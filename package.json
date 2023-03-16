@@ -1,0 +1,35 @@
+{
+    "name": "glob-capture-regex",
+    "version": "1.0.0",
+    "description": "Convert glob patterns to regular expressions, including the feature of capturing groups within the glob pattern.",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "jest --watch-all --verbose"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hzisman/glob-capture-regex.git"
+    },
+    "keywords": [
+        "glob",
+        "regex",
+        "capture"
+    ],
+    "author": "hzisman",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hzisman/glob-capture-regex/issues"
+    },
+    "homepage": "https://github.com/hzisman/glob-capture-regex#readme",
+    "files": [
+        "index.js",
+        "LICENSE"
+    ],
+    "devDependencies": {
+        "@types/jest": "^29.5.0",
+        "jest": "^29.5.0"
+    }
+}
