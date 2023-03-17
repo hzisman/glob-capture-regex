@@ -14,7 +14,7 @@ $ npm i glob-capture-regex
 const globCaptureRegex = require('glob-capture-regex');
 
 const globWithGroups = 'my/gl(*)b/pattern/(**).js';
-const path = 'my/glob/pattern/with-capture-groups.js';
+const path = 'my/glob/pattern/with/capture/groups.js';
 
 const { glob, regex } = globCaptureRegex(globWithGroups).parse();
 
@@ -24,8 +24,8 @@ console.log(regex.match(path));
 // [
 //    'my/glob/pattern/with-capture-groups.js', 
 //    'o', 
-//    'with-capture-groups'
-//];
+//    'with/capture/groups'
+// ];
 ```
 
 ## API

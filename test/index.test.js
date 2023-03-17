@@ -61,16 +61,16 @@ test('unbalanced parenthesis should cause an error', () => {
 test('example shown in README.md', () => {
 
     const globWithGroups = 'my/gl(*)b/pattern/(**).js';
-    const path = 'my/glob/pattern/with-capture-groups.js';
+    const path = 'my/glob/pattern/with/capture/groups.js';
 
     const { glob, regex } = globCaptureRegex(globWithGroups).parse();
 
     expect(glob).toBe('my/gl*b/pattern/**.js');
 
     const expected = [
-        'my/glob/pattern/with-capture-groups.js',
+        'my/glob/pattern/with/capture/groups.js',
         'o',
-        'with-capture-groups',
+        'with/capture/groups',
     ];
     path.match(regex).forEach((match, i) => {
         expect(match).toEqual(expected[i]);
