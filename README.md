@@ -18,8 +18,14 @@ const path = 'my/glob/pattern/with-capture-groups.js';
 
 const { glob, regex } = globCaptureRegex(globWithGroups).parse();
 
-glob; // my/gl*b/pattern/**.js
-regex.match(path); // ['my/glob/pattern/with-capture-groups.js', 'o', 'with-capture-groups'];
+console.log(glob); // my/gl*b/pattern/**.js
+
+console.log(regex.match(path)); 
+// [
+//    'my/glob/pattern/with-capture-groups.js', 
+//    'o', 
+//    'with-capture-groups'
+//];
 ```
 
 ## API
@@ -32,10 +38,15 @@ Converts a glob pattern to a regular expression with capture groups.
 
 **Returns:** An object with the following properties:
 
-```js
+```txt
 {
-    glob: Getter<string>,  // A getter that returns the glob pattern without the capture groups.
-    regex: Getter<RegExp>, // A getter that returns the regular expression with capture groups
-    parse: function        // Function which return an object with both the `glob` and the `regex`
+    // A getter that returns the glob pattern without the capture groups.
+    glob: Getter<string>,
+
+    // A getter that returns the regular expression with capture groups
+    regex: Getter<RegExp>, 
+    
+    // Function which return an object with both the `glob` and the `regex`
+    parse: function
 }
 ```
