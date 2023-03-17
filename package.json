@@ -26,10 +26,10 @@
     "homepage": "https://github.com/hzisman/glob-capture-regex#readme",
     "files": [
         "index.js",
-        "LICENSE"
+        "LICENSE",
+        "README.md"
     ],
     "devDependencies": {
-        "@types/jest": "^29.5.0",
         "jest": "^29.5.0"
     }
 }
