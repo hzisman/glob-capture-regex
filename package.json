@@ -16,7 +16,16 @@
     "keywords": [
         "glob",
         "regex",
-        "capture"
+        "regexp",
+        "capture",
+        "capturing",
+        "regular",
+        "expression",
+        "globbing",
+        "match",
+        "pattern",
+        "groups",
+        "wildcard"
     ],
     "author": "hzisman",
     "license": "MIT",
