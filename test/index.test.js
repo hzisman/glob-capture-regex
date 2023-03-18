@@ -72,7 +72,6 @@ test('unbalanced parenthesis should cause an error', () => {
 });
 
 test('example shown in README.md', () => {
-
     const globWithGroups = 'my/gl(*)b/pattern/(**).js';
     const path = 'my/glob/pattern/with/capture/groups.js';
 
@@ -90,9 +89,7 @@ test('example shown in README.md', () => {
     });
 });
 
-
 test('behavior againt random generated test and patterns', () => {
-
     const examplesCount = 1_000;
 
     const getMaxLength = (index, arrayLength) => [0, arrayLength - 1].includes(index) ? 3 : 12;
@@ -121,7 +118,6 @@ test('behavior againt random generated test and patterns', () => {
         expect(groups[3]).toBe(txt[5]);
     }
 });
-
 
 function randomText({ minLength = 0, maxLength = 10, excludeChars = "()/\\*" } = {}) {
     let randomText = '';
@@ -156,7 +152,6 @@ function randomTextWithBalancedParenthesis() {
 
         text += randomText();
     }
-
 
     return text;
 }
