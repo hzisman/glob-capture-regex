@@ -22,7 +22,7 @@ console.log(glob); // my/gl*b/pattern/**.js
 
 console.log(regex.match(path)); 
 // [
-//    'my/glob/pattern/with-capture-groups.js', 
+//    'my/glob/pattern/with/capture/groups.js', 
 //    'o', 
 //    'with/capture/groups'
 // ];
