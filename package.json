@@ -1,6 +1,6 @@
 {
     "name": "glob-capture-regex",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Convert glob patterns to regular expressions, including the feature of capturing groups within the glob pattern.",
     "main": "index.js",
     "directories": {
